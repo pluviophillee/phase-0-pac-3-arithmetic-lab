@@ -23,9 +23,11 @@ function decrement(n) {
 }
 
 function makeInt(n=555){
-    parseInt(n, 10);
+    const parsed = parseInt(n, 10);
+    return parsed;
 }
 
-function preserveDecimal(){
-    parseFloat("80.123999"); 
+function preserveDecimal(n="80.123999"){
+    const parsedFloat = parseFloat(n);
+    return parsedFloat; 
 }
